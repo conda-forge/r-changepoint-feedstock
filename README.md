@@ -3,7 +3,7 @@ About r-changepoint
 
 Home: https://github.com/rkillick/changepoint/
 
-Package license: GPL
+Package license: GPL-2.0-or-later
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-changepoint-feedstock/blob/master/LICENSE.txt)
 
