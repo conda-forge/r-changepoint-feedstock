@@ -1,4 +1,4 @@
-{% set version = '2.2.2' %}
+{% set version = "2.2.3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/changepoint_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/changepoint/changepoint_{{ version }}.tar.gz
-  sha256: 727edd88f1e39885654d319688bf088942984e240b28db2fbc204c764b8a73c9
+  sha256: 9255f16583a5296a8af02d2a50925a0888b74eae57489d0a28763f3cd3efedc2
 
 build:
-  merge_build_host: True  # [win]
-  number: 1004
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -45,10 +45,7 @@ test:
 about:
   home: https://github.com/rkillick/changepoint/
   license: GPL-2.0-or-later
-  summary: Implements various mainstream and specialised changepoint methods for finding single
-    and multiple changepoints within data.  Many popular non-parametric and frequentist
-    methods are included.  The cpt.mean(), cpt.var(), cpt.meanvar() functions should
-    be your first point of call.
+  summary: Implements various mainstream and specialised changepoint methods for finding single and multiple changepoints within data.  Many popular non-parametric and frequentist methods are included.  The cpt.mean(), cpt.var(), cpt.meanvar() functions should be your first point of call.
   license_family: GPL
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
