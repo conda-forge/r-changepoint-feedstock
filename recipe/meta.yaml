@@ -1,4 +1,4 @@
-{% set version = "2.2.4" %}
+{% set version = "2.3" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/changepoint_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/changepoint/changepoint_{{ version }}.tar.gz
-  sha256: ac636fde7610137385dde1e3d8a22a2ff856a8d5c917c7ad1a5cc49f98b8649b
+  sha256: 19a8b009d807c6be3f124b336a10e9d1e81077682abe63cfab72a3c51dbb682d
 
 build:
-  number: 2
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
